@@ -5,7 +5,7 @@ export const AppHeader = () => {
   return (
     <Header
       back={false}
-      logo='/icon.png'
+      logo='/icon2.png'
       title={'Подбор Фильма'}
     />
   )
