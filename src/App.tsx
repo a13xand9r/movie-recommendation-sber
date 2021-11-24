@@ -31,7 +31,7 @@ function App() {
     <div>
       <GlobalStyles character={state.character} />
       <Container style={{marginBottom: '5rem'}}>
-        <AppHeader />
+        <AppHeader assistant={assistantRef.current as ReturnType<typeof createAssistant>} />
         {/* <AppContainer> */}
           {
             !state.movie ?
@@ -41,8 +41,8 @@ function App() {
                     <TextBox>
                       {
                         state.character === 'joy' ?
-                          'Я могу порекомендовать тебе фильм на основе твоих предпочтений. Назови фильм, который тебе нравится, а я посоветую похожие.' :
-                          'Я могу порекомендовать вам фильм на основе ваших предпочтений. Назовите фильм, который вам нравится, а я посоветую похожие.'
+                          'Я могу порекомендовать тебе фильм на основе твоих предпочтений. Назови фильм, который тебе нравится, а я посоветую похожие' :
+                          'Я могу порекомендовать вам фильм на основе ваших предпочтений. Назовите фильм, который вам нравится, а я посоветую похожие'
                       }
                     </TextBox>
                   </CardContent>
